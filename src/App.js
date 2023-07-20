@@ -9,7 +9,6 @@ function App() {
             .get(`${config.api_base_url}/user`)
             .then((response) => {
                 setUsers(response.data)
-                console.log('response   ', response)
             })
             .catch((error) => console.log(error))
     }, [])
