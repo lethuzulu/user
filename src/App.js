@@ -15,7 +15,7 @@ function App() {
 
     const [details, setDetails] = React.useState({
         user_name: '',
-        password: '',
+        user_password: '',
     })
 
     const handleChange = (event) => {
@@ -47,7 +47,7 @@ function App() {
                               return (
                                   <li key={index}>
                                       {user.user_name} {' - '}{' '}
-                                      {user.password}
+                                      {user.user_password}
                                   </li>
                               )
                           })
